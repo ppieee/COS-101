@@ -1,10 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module type="PYTHON_MODULE" version="4">
-  <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$">
-      <excludeFolder url="file://$MODULE_DIR$/.venv" />
-    </content>
-    <orderEntry type="jdk" jdkName="Python 3.13 (assignment)" jdkType="Python SDK" />
-    <orderEntry type="sourceFolder" forTests="false" />
-  </component>
-</module>
+def a():
+    velocity=int(input("what is the velocity"))
+    time=int(input("what is time"))
+    displacement= velocity*time
+    print(displacement)
+
+
+def b():
+    force=int(input("what is the force"))
+    distance=int(input("what is distance"))
+    work = force*distance
+    print(work)
+
+def c():
+    velocity=int(input("what is the velocity"))
+    time=int(input("what is time"))
+    acceleration = velocity/time
+    print(acceleration)
+
+def d():
+    work=int(input("what is work"))
+    time=int(input("what is time"))
+    power=work/time
+    print(power)
+
+def e():
+    mass=int(input("what is mass"))
+    acceleration=int(input("what is acceleration"))
+    force = mass*acceleration
+    print(force)
+
+def main ():
+    user_choice= input("choose between a-e:")
+    if user_choice == "a":
+        a()
+    elif user_choice == "b":
+        b()
+    elif user_choice == "c":
+        c()
+    elif user_choice == "d":
+        d()
+    elif user_choice == "e":
+        e()
+    else:
+        print("invalid input")
+if __name__ == '__main__':
+    main()
